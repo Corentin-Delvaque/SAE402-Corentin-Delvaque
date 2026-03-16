@@ -1,0 +1,32 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.7/theme.json",
+  "version": 3,
+  "title": "Mode Sombre",
+  "settings": {
+    "color": {
+      "palette": [
+        {
+          "name": "Primary",
+          "slug": "primary",
+          "color": "#1a1a2e"
+        },
+        {
+          "name": "Secondary",
+          "slug": "secondary",
+          "color": "#e0e0e0"
+        },
+        {
+          "name": "Accent",
+          "slug": "accent",
+          "color": "#ff6b6b"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "color": {
+      "background": "var(--wp--preset--color--primary)",
+      "text": "var(--wp--preset--color--secondary)"
+    }
+  }
+}
