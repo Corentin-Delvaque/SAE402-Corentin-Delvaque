@@ -28,14 +28,19 @@
 					"slug": "custom-white"
 				},
 				{
-					"color": "#468254",
+					"color": "#000000",
 					"name": "Green",
 					"slug": "custom-green"
 				},
 				{
-					"color": "#032c2d",
+					"color": "#053335",
 					"name": "Turquoise",
 					"slug": "custom-turquoise"
+				},
+				{
+					"color": "#000",
+					"name": "Black",
+					"slug": "custom-black"
 				}
 			]
 		},
