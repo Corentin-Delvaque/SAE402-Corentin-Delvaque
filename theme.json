@@ -1,63 +1,107 @@
 {
-  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
-  "version": 3,
-   "templateParts": [
-    {
-      "name": "header",
-      "title": "En-tête",
-      "area": "header"
-    },
-    {
-      "name": "footer",
-      "title": "Pied de page",
-      "area": "footer"
-    }
-  ],
-  "settings": {
-    "appearanceTools": true,
-    "color": {
-      "defaultPalette": false,
-      "custom": false,
-      "palette": [
-        {
-          "name": "Primary",
-          "slug": "primary",
-          "color": "#0073aa"
-        },
-        {
-          "name": "Secondary",
-          "slug": "secondary",
-          "color": "#005177"
-        },
-        {
-          "name": "Accent",
-          "slug": "accent",
-          "color": "#d54e21"
-        }
-      ]
-    },
-    "typography": {
-      "fontFamilies": [
-        {
-          "name": "Custom Font",
-          "slug": "custom-font",
-          "fontFace": [
-            {
-              "fontFamily": "Custom Font",
-              "src": "url(../assets/fonts/custom-font.woff2) format('woff2')"
-            }
-          ]
-        }
-      ]
-    }
-  },
-  "styles": {
-    "color": {
-      "background": "var(--wp--preset--color--primary)",
-      "text": "var(--wp--preset--color--secondary)"
-    },
-    "typography": {
-      "fontFamily": "var(--wp--preset--typography--custom-font)"
-    }
-  }
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"version": 3,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"custom": false,
+			"defaultPalette": false,
+			"palette": [
+				{
+					"color": "#0073aa",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#005177",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#d54e21",
+					"name": "Accent",
+					"slug": "accent"
+				},
+				{
+					"color": "#ffffff",
+					"name": "White",
+					"slug": "custom-white"
+				},
+				{
+					"color": "#468254",
+					"name": "Green",
+					"slug": "custom-green"
+				},
+				{
+					"color": "#032c2d",
+					"name": "Turquoise",
+					"slug": "custom-turquoise"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFace": [
+						{
+							"fontFamily": "\"Hylia Serif Beta\"",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/hylia-serif-beta/hylia-serif-beta-400-normal.otf"
+							]
+						}
+					],
+					"fontFamily": "\"Hylia Serif Beta\"",
+					"name": "Hylia Serif Beta",
+					"slug": "hylia-serif-beta"
+				}
+			]
+		}
+	},
+	"styles": {
+		"background": {
+			"backgroundAttachment": "fixed",
+			"backgroundImage": {
+				"id": 43,
+				"source": "file",
+				"title": "pattern-triforce-2x",
+				"url": "https://mmi.unilim.fr/~delvaque1/402/wp-content/uploads/2026/03/pattern-triforce-2x.png"
+			},
+			"backgroundPosition": "50% 0%",
+			"backgroundRepeat": "repeat",
+			"backgroundSize": "40px"
+		},
+		"color": {
+			"background": "var(--wp--preset--color--custom-turquoise)",
+			"text": "var(--wp--preset--color--custom-white)"
+		},
+		"elements": {
+			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
+				}
+			}
+		},
+		"spacing": {
+			"padding": {
+				"bottom": "0px",
+				"left": "0px",
+				"right": "0px",
+				"top": "0px"
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header",
+			"title": "En-tête"
+		},
+		{
+			"area": "footer",
+			"name": "footer",
+			"title": "Pied de page"
+		}
+	]
 }
