@@ -1,9 +1,8 @@
 <?php
 /**
- * Title: Hero
- * Slug: zeldaskywardsword/Hero
+ * Title: hero
+ * Slug: /hero
  * Categories: hero
- * Keywords: hero, action
  */
 ?>
 

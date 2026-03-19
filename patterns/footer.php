@@ -2,7 +2,7 @@
 /**
  * Title: footer
  * Slug: /footer
- * Inserter: no
+ * Categories: footer
  */
 ?>
 <!-- wp:group {"align":"full","className":"wc-blocks-pattern-footer-large wc-blocks-footer-pattern","style":{"spacing":{"padding":{"top":"40px","right":"40px","bottom":"40px","left":"40px"},"blockGap":"40px"}}} -->

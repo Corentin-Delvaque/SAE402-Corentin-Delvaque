@@ -3,7 +3,6 @@
  * Title: Call to Action
  * Slug: zeldaskywardsword/cta
  * Categories: call-to-action
- * Keywords: cta, action, contact
  */
 ?>
 <!-- wp:group {"backgroundColor":"accent","layout":{"type":"constrained"}} -->

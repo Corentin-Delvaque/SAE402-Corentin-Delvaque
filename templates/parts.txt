@@ -1,1 +1,0 @@
-Les templates correspondent à des « Modèles » dans WordPress.
