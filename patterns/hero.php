@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: hero
- * Slug: /hero
+ * Slug: zeldaskywardsword/hero
  * Categories: hero
  */
 ?>
