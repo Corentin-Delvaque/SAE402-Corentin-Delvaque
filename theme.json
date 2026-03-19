@@ -65,6 +65,37 @@
 					"fontFamily": "\"Hylia Serif Beta\"",
 					"name": "Hylia Serif Beta",
 					"slug": "hylia-serif-beta"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Inter",
+							"fontStretch": "normal",
+							"fontStyle": "normal",
+							"fontWeight": "300 900",
+							"src": [
+								"http://la-boutique-zelda.wp.local/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2"
+							]
+						}
+					],
+					"fontFamily": "\"Inter\", sans-serif",
+					"name": "Inter",
+					"slug": "inter"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Cardo",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"http://la-boutique-zelda.wp.local/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2"
+							]
+						}
+					],
+					"fontFamily": "Cardo",
+					"name": "Cardo",
+					"slug": "cardo"
 				}
 			]
 		}
@@ -81,6 +112,24 @@
 			"backgroundPosition": "50% 0",
 			"backgroundRepeat": "repeat",
 			"backgroundSize": "40px"
+		},
+		"blocks": {
+			"core/button": {
+				"variations": {
+					"btn_name": {
+						"border": {
+							"color": "var(--wp--preset--color--custom-or)",
+							"style": "solid",
+							"width": "3px"
+						},
+						"color": {
+							"background": "transparent",
+							"text": "var(--wp--preset--color--custom-white)"
+						},
+						"css": "&{border-radius:0px;}"
+					}
+				}
+			}
 		},
 		"color": {
 			"background": "var(--wp--preset--color--custom-turquoise)",

@@ -1,7 +1,7 @@
 <?php
 /**
  * Title: Call to Action
- * Slug: /cta
+ * Slug: zeldaskywardsword/cta
  * Categories: call-to-action
  */
 ?>
