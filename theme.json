@@ -41,6 +41,11 @@
 					"color": "#000",
 					"name": "Black",
 					"slug": "custom-black"
+				},
+				{
+					"color": "#b99658",
+					"name": "Or",
+					"slug": "custom-or"
 				}
 			]
 		},
@@ -68,12 +73,12 @@
 		"background": {
 			"backgroundAttachment": "fixed",
 			"backgroundImage": {
-				"id": 43,
+				"id": 67,
 				"source": "file",
 				"title": "pattern-triforce-2x",
-				"url": "https://mmi.unilim.fr/~delvaque1/402/wp-content/uploads/2026/03/pattern-triforce-2x.png"
+				"url": "http://la-boutique-zelda.wp.local/wp-content/uploads/2026/03/pattern-triforce-2x.png"
 			},
-			"backgroundPosition": "50% 0%",
+			"backgroundPosition": "50% 0",
 			"backgroundRepeat": "repeat",
 			"backgroundSize": "40px"
 		},
