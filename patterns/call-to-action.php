@@ -1,8 +1,8 @@
 <?php
 /**
- * Title: Call to Action
- * Slug: zeldaskywardsword/cta
- * Categories: call-to-action
+ * Title: call to Action
+ * Slug: /call-to-action
+ * Inserter: yes
  */
 ?>
 <!-- wp:group {"backgroundColor":"accent","layout":{"type":"constrained"}} -->

@@ -1,8 +1,8 @@
 <?php
 /**
  * Title: Hero
- * Slug: zeldaskywardsword/hero
- * Categories: featured
+ * Slug: /hero
+ * Inserter: yes
  */
 ?>
 
