@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <title>WooCommerce Full Preview</title>
+    <link rel="stylesheet" href="woocommerce.css">
+
+    <style>
+        body {
+            background: #0b0f10;
+            padding: 20px;
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body class="woocommerce">
+
+    <div class="wc-page">
+
+        <!-- HEADER / HERO -->
+        <section class="wc-archive-hero">
+            <h1 class="page-title">Boutique</h1>
+            <p class="woocommerce-products-header__description">
+                Description de la boutique
+            </p>
+        </section>
+
+        <!-- TOOLBAR -->
+        <div class="wc-shop-toolbar">
+            <p class="woocommerce-result-count">12 résultats</p>
+            <form class="woocommerce-ordering">
+                <select class="orderby">
+                    <option>Tri par défaut</option>
+                    <option>Prix</option>
+                </select>
+            </form>
+        </div>
+
+        <!-- GRID PRODUITS -->
+        <ul class="wc-products-grid products">
+            <li class="product">
+                <span class="onsale">Promo</span>
+                <img src="https://via.placeholder.com/300">
+                <h2 class="woocommerce-loop-product__title">Produit 1</h2>
+                <span class="price">19€</span>
+                <a class="button">Ajouter</a>
+            </li>
+
+            <li class="product">
+                <img src="https://via.placeholder.com/300">
+                <h2 class="woocommerce-loop-product__title">Produit 2</h2>
+                <span class="price">39€</span>
+                <a class="button">Ajouter</a>
+            </li>
+        </ul>
+
+        <!-- PAGE PRODUIT -->
+        <section class="wc-product-layout">
+
+            <div class="wc-product-gallery">
+                <img src="https://via.placeholder.com/500">
+            </div>
+
+            <div class="wc-product-summary">
+                <h1 class="product_title">Produit complet</h1>
+                <p class="price">99€</p>
+
+                <div class="woocommerce-product-rating">⭐⭐⭐⭐⭐</div>
+
+                <p class="woocommerce-product-details__short-description">
+                    Description courte du produit
+                </p>
+
+                <form class="cart">
+                    <div class="quantity">
+                        <input type="number" value="1">
+                    </div>
+                    <button class="single_add_to_cart_button button">Ajouter au panier</button>
+                </form>
+
+                <div class="product_meta">
+                    <span>Catégorie : Test</span>
+                    <span>SKU : 123</span>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- REVIEWS -->
+        <section class="wc-product-details">
+            <h2>Avis</h2>
+
+            <ul class="commentlist">
+                <li>Super produit</li>
+                <li>Incroyable</li>
+            </ul>
+
+            <form class="comment-form">
+                <textarea placeholder="Votre avis"></textarea>
+                <button class="button">Envoyer</button>
+            </form>
+        </section>
+
+        <!-- PANIER -->
+        <section class="wc-cart-shell">
+
+            <form class="wc-cart-form">
+                <table class="shop_table">
+                    <tr>
+                        <th>Produit</th>
+                        <th>Prix</th>
+                    </tr>
+                    <tr>
+                        <td>Produit 1</td>
+                        <td>19€</td>
+                    </tr>
+                </table>
+
+                <div class="coupon">
+                    <input class="input-text" placeholder="Code promo">
+                    <button class="button">Appliquer</button>
+                </div>
+
+            </form>
+
+            <div class="wc-cart-collaterals">
+                <div></div>
+
+                <div class="cart_totals">
+                    <h2>Total</h2>
+                    <p>19€</p>
+                    <button class="button">Commander</button>
+                </div>
+            </div>
+
+        </section>
+
+        <!-- CHECKOUT -->
+        <section class="wc-checkout-shell">
+
+            <form class="wc-checkout-form">
+
+                <div class="wc-checkout-columns">
+
+                    <div class="woocommerce-billing-fields">
+                        <h3>Facturation</h3>
+                        <input type="text" placeholder="Nom">
+                        <input type="email" placeholder="Email">
+                    </div>
+
+                    <div class="woocommerce-shipping-fields">
+                        <h3>Livraison</h3>
+                        <input type="text" placeholder="Adresse">
+                    </div>
+
+                </div>
+
+                <div class="wc-checkout-payment">
+                    <ul class="wc_payment_methods">
+                        <li>Paiement carte</li>
+                        <li>PayPal</li>
+                    </ul>
+
+                    <button class="button">Payer</button>
+                </div>
+
+            </form>
+
+        </section>
+
+        <!-- COMPTE -->
+        <section class="wc-account-layout">
+
+            <nav class="wc-account-nav">
+                <ul>
+                    <li class="is-active"><a href="#">Dashboard</a></li>
+                    <li><a href="#">Commandes</a></li>
+                    <li><a href="#">Adresses</a></li>
+                </ul>
+            </nav>
+
+            <div class="wc-account-content">
+                <h2>Mon compte</h2>
+
+                <table class="woocommerce-orders-table">
+                    <tr>
+                        <th>Commande</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td>#123</td>
+                        <td>49€</td>
+                    </tr>
+                </table>
+
+            </div>
+
+        </section>
+
+        <!-- LOGIN / REGISTER -->
+        <section class="wc-account-auth">
+
+            <div class="wc-account-login-panel">
+                <h3>Connexion</h3>
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Mot de passe">
+                <button class="button">Se connecter</button>
+            </div>
+
+            <div class="wc-account-register-panel">
+                <h3>Inscription</h3>
+                <input type="text" placeholder="Email">
+                <input type="password" placeholder="Mot de passe">
+                <button class="button">Créer compte</button>
+            </div>
+
+        </section>
+
+        <!-- MINI CART -->
+        <section class="woocommerce-mini-cart-contents">
+
+            <ul class="woocommerce-mini-cart">
+                <li class="woocommerce-mini-cart-item">
+                    <img src="https://via.placeholder.com/50">
+                    Produit mini cart
+                </li>
+            </ul>
+
+            <div class="woocommerce-mini-cart__total">
+                Total : 19€
+            </div>
+
+            <div class="woocommerce-mini-cart__buttons">
+                <button class="button">Voir panier</button>
+                <button class="button">Commander</button>
+            </div>
+
+        </section>
+
+        <!-- SEARCH -->
+        <section class="woocommerce-product-search">
+            <input class="search-field" placeholder="Rechercher">
+            <button>OK</button>
+        </section>
+
+        <!-- FILTER PRICE -->
+        <section class="widget_price_filter">
+            <div class="price_slider_wrapper">
+                <div class="price_slider"></div>
+                <div class="price_slider_amount">
+                    <span class="price_label">0€ - 100€</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- NOTIFICATIONS -->
+        <div class="woocommerce-message">Succès</div>
+        <div class="woocommerce-error">Erreur</div>
+        <div class="woocommerce-info">Info</div>
+
+    </div>
+
+</body>
+
+</html>
