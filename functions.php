@@ -82,34 +82,6 @@ function zeldaskywardsword_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'zeldaskywardsword_scripts' );
 
-/**
- * Charge les styles WooCommerce du thème.
- *
- * Les templates WooCommerce sont fortement remaquettés pour reprendre la
- * direction artistique du site, sans impacter les pages non liées à la boutique
- * si le plugin n'est pas actif.
- *
- * @since 1.0.0
- * @return void
- */
-function zeldaskywardsword_woocommerce_styles() {
-    if ( ! class_exists( 'WooCommerce' ) ) {
-        return;
-    }
-
-    $theme_version = wp_get_theme()->get( 'Version' );
-
-    wp_enqueue_style(
-        'zeldaskywardsword-woocommerce',
-        get_template_directory_uri() . '/assets/woocommerce.css',
-        array( 'zeldaskywardsword-style' ),
-        $theme_version
-    );
-}
-add_action( 'wp_enqueue_scripts', 'zeldaskywardsword_woocommerce_styles' );
-
-
-
 add_filter( 'block_editor_settings_all', function( $settings ) {
     $settings['__experimentalFeatures']['useRootPaddingAwareAlignments'] = true;
     return $settings;
