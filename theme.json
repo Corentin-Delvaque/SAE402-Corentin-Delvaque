@@ -46,6 +46,11 @@
 					"color": "#b99658",
 					"name": "Or",
 					"slug": "custom-or"
+				},
+				{
+					"color": "#ffffff00",
+					"name": "Transparent",
+					"slug": "custom-transparent"
 				}
 			]
 		},

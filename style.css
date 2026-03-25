@@ -182,6 +182,10 @@ body.woocommerce-page {
   position: relative;
 }
 
+.wc-block-components-drawer__screen-overlay {
+  background: rgba(5, 51, 53, 0.33);
+}
+
 .woocommerce
   :is(.button, button, input[type="submit"], input[type="button"], .wp-block-button__link) {
   appearance: none;
