@@ -187,7 +187,14 @@ body.woocommerce-page {
 }
 
 .woocommerce
-  :is(.button, button, input[type="submit"], input[type="button"], .wp-block-button__link) {
+  :is(
+    .button,
+    button,
+    input[type="submit"],
+    input[type="button"],
+    .wp-block-button__link,
+    .wc-block-mini-cart__footer-checkout
+  ) {
   appearance: none;
   align-items: center;
   background: linear-gradient(180deg, rgba(185, 150, 88, 0.16), rgba(185, 150, 88, 0.05));
@@ -219,7 +226,14 @@ body.woocommerce-page {
 }
 
 .woocommerce
-  :is(.button, button, input[type="submit"], input[type="button"], .wp-block-button__link):hover,
+  :is(
+    .button,
+    button,
+    input[type="submit"],
+    input[type="button"],
+    .wp-block-button__link,
+    .wc-block-mini-cart__footer-checkout
+  ):hover,
 .woocommerce
   :is(
     .button,
@@ -227,12 +241,17 @@ body.woocommerce-page {
     input[type="submit"],
     input[type="button"],
     .wp-block-button__link
-  ):focus-visible {
+  ):focus-visible,
+.wc-block-mini-cart__footer-checkout:hover {
   background: linear-gradient(180deg, var(--wc-border-strong), #97723e);
   box-shadow:
     0 0 0 1px rgba(185, 150, 88, 0.35),
     0 16px 28px rgba(0, 0, 0, 0.26);
   color: #081516;
+}
+
+.is-style-outline:hover {
+  background: var(--wp--preset--color--custom-black) !important;
 }
 
 .woocommerce
@@ -411,6 +430,21 @@ body.woocommerce-page {
   margin-bottom: 0.9rem;
 }
 
+.woocommerce-breadcrumb,
+.woocommerce-result-count {
+  font-family: var(--wp--preset--font-family--hylia-serif-beta) !important;
+  color: var(--wc-text);
+}
+
+.wp-block-button__link,
+.woocommerce-Button {
+  border: solid 1px var(--wc-border-strong) !important;
+}
+
+.wc-block-mini-cart__footer-checkout {
+  background-color: var(--wc-border-strong);
+}
+
 .woocommerce
   .wc-archive-hero
   :is(.wp-block-query-title, .woocommerce-products-header__title, .page-title),
@@ -519,9 +553,23 @@ body.woocommerce-page {
 .woocommerce
   ul.products.wc-products-grid
   :is(.woocommerce-loop-product__title, .wp-block-post-title, .wc-block-grid__product-title) {
+  color: var(--wc-text);
   font-size: 1.15rem;
   line-height: 1.2;
   margin: 0;
+}
+
+.wc-block-grid__product-link {
+  color: var(--wc-text);
+  text-decoration: none;
+}
+
+.wc-block-grid__product-title {
+  color: var(--wc-text);
+  font-size: 1.15rem;
+  line-height: 1.2;
+  margin: 0;
+  text-decoration: none;
 }
 
 .mycred-my-balance-wrapper {
@@ -580,8 +628,29 @@ body.woocommerce-page {
   ul.products.wc-products-grid
   :is(.price, .woocommerce-Price-amount, .wp-block-woocommerce-product-price) {
   color: var(--wc-border-strong);
-  font-size: 1rem;
+  font-size: 2rem;
   font-weight: 600;
+}
+
+.woocommerce-Price-amount {
+  font-size: 1rem;
+}
+
+.wc-block-components-product-sale-badge {
+  background-color: var(--wc-border-strong);
+  color: var(--wp--preset--color--custom-black);
+  font-size: 1rem;
+}
+
+.wc-block-grid__product-onsale {
+  background-color: var(--wc-border-strong);
+}
+
+.wc-block-grid .wc-block-grid__product-onsale,
+.wc-block-grid__product-image .wc-block-grid__product-onsale {
+  font-size: 1rem;
+  background-color: var(--wc-border-strong);
+  color: var(--wp--preset--color--custom-black);
 }
 
 .woocommerce .wc-products-grid :is(.button, .add_to_cart_button, .wp-block-button__link),
@@ -958,6 +1027,10 @@ body.woocommerce-page {
   margin-bottom: 0;
 }
 
+.woocommerce-form-login {
+  border: var(--wc-border-strong);
+}
+
 .woocommerce .woocommerce-MyAccount-orders .button,
 .woocommerce .woocommerce-MyAccount-paymentMethods .button {
   min-width: 120px;
@@ -968,6 +1041,27 @@ body.woocommerce-page {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
+}
+
+.wc-block-components-product-name {
+  color: var(--wc-text);
+  font-size: 1.15rem;
+  line-height: 1.2;
+  margin: 0;
+}
+
+.wc-block-components-quantity-selector .wc-block-components-quantity-selector__input {
+  font-family: var(--wp--preset--font-family--hylia-serif-beta);
+}
+
+.wc-block-components-text-input {
+  color: var(--wp--preset--color--custom-black);
+  font-family: var(--wp--preset--font-family--hylia-serif-beta);
+}
+
+.wc-block-components-totals-item {
+  color: var(--wc-text);
+  font-family: var(--wp--preset--font-family--hylia-serif-beta);
 }
 
 .woocommerce .woocommerce-product-search .search-field {
