@@ -154,7 +154,23 @@
 			"text": "var(--wp--preset--color--custom-white)"
 		},
 		"elements": {
+			"button": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)",
+					"fontWeight": "400"
+				}
+			},
+			"caption": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
+				}
+			},
 			"heading": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
+				}
+			},
+			"link": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
 				}
