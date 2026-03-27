@@ -158,3 +158,4 @@ function give_rubies_callback() {
 
     wp_die();
 }
+

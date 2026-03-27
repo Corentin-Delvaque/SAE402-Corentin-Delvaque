@@ -92,6 +92,13 @@ body.woocommerce-page {
   width: 100%;
 }
 
+.woocommerce-Price-currencySymbol,
+.mycred-my-balance-wrapper::after {
+  font-family: var(--wp--preset--font-family--rubis) !important;
+  font-size: 1.5em;
+  color: green;
+}
+
 .wc-surface,
 .woocommerce .woocommerce-MyAccount-navigation,
 .woocommerce .woocommerce-MyAccount-content,
@@ -208,10 +215,6 @@ body.woocommerce-page {
     .wp-block-button__link
   ):focus-visible,
 .wc-block-mini-cart__footer-checkout:hover {
-  background: linear-gradient(180deg, var(--wc-border-strong), #97723e);
-  box-shadow:
-    0 0 0 1px rgba(185, 150, 88, 0.35),
-    0 16px 28px rgba(0, 0, 0, 0.26);
   color: #081516;
 }
 
@@ -558,12 +561,9 @@ header > a:first-child {
 }
 
 .mycred-my-balance-wrapper::after {
-  content: "";
+  content: "$";
   display: block;
-  background-size: contain;
-  width: 1.5rem;
-  height: 1.5rem;
-  background-image: url("http://la-boutique-zelda.wp.local/wp-content/uploads/2026/03/Rubis.png");
+  margin-left: 0.25rem;
 }
 
 .mycred-my-balance-wrapper-container::before {
@@ -597,12 +597,6 @@ header > a:first-child {
   ul.products.wc-products-grid
   :is(.price, .woocommerce-Price-amount, .wp-block-woocommerce-product-price) {
   color: var(--wc-border-strong);
-  font-size: 2rem;
-  font-weight: 600;
-}
-
-.woocommerce-Price-amount {
-  font-size: 1rem;
 }
 
 .wc-block-components-product-sale-badge {
@@ -1311,6 +1305,12 @@ header > a:first-child {
   .woocommerce .wc-order-confirmation-grid {
     grid-template-columns: 1fr !important;
   }
+  .product-name {
+    font-size: 2rem !important;
+  }
+  .woocommerce-Price-amount {
+    font-size: 1.5rem !important;
+  }
 }
 
 /* Ultra petit écran */
@@ -1321,5 +1321,18 @@ header > a:first-child {
 
   .woocommerce .button {
     width: 100%;
+  }
+  .woocommerce-Price-amount {
+    font-size: 1rem !important;
+  }
+}
+
+.wc-blocks-pattern-header-essential {
+  justify-content: space-between;
+}
+
+@media (max-width: 960px) {
+  .wc-blocks-pattern-header-essential {
+    justify-content: center;
   }
 }

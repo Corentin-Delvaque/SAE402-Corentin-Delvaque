@@ -101,6 +101,21 @@
 					"fontFamily": "Cardo",
 					"name": "Cardo",
 					"slug": "cardo"
+				},
+				{
+					"fontFace": [
+						{
+							"fontFamily": "Rubis",
+							"fontStyle": "normal",
+							"fontWeight": "400",
+							"src": [
+								"file:./assets/fonts/rubis/rubis-400-normal.otf"
+							]
+						}
+					],
+					"fontFamily": "Rubis",
+					"name": "Rubis",
+					"slug": "rubis"
 				}
 			]
 		}
