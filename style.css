@@ -222,6 +222,20 @@ body.woocommerce-page {
   background-color: var(--wp--preset--color--custom-transparent);
 }
 
+.wc-block-featured-product__background-image {
+  width: Auto !important;
+  height: 200% !important;
+  object-fit: cover !important;
+  left: auto !important;
+  right: 0;
+  top: -20% !important;
+}
+
+.woocommerce-coupon-code {
+  font-family: var(--wp--preset--font-family--hylia-serif-beta);
+  text-transform: uppercase;
+}
+
 .woocommerce
   :is(
     .button,
@@ -1222,6 +1236,10 @@ header > a:first-child {
   padding: 0;
 }
 
+.p5js-game main {
+  border: 2px solid var(--wp--preset--color--custom-or);
+}
+
 .woocommerce .commentlist li {
   background: color-mix(in srgb, var(--wp--preset--color--custom-white) 3%, transparent);
   border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-white) 8%, transparent);
@@ -1283,6 +1301,15 @@ header > a:first-child {
   .woocommerce table.woocommerce-MyAccount-paymentMethods,
   .woocommerce table.woocommerce-checkout-review-order-table {
     font-size: 0.95rem;
+  }
+
+  .produit-mis-en-avant {
+    margin: 0rem !important;
+    padding: 0.5rem !important;
+  }
+
+  .woocommerce-coupon-code {
+    font-size: 0.75em !important;
   }
 }
 

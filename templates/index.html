@@ -3,9 +3,12 @@
 
 <!-- wp:template-part {"slug":"hero","area":"uncategorized"} /-->
 
-<!-- wp:template-part {"slug":"footer","area":"footer"} /-->
+<!-- wp:group {"className":"produit-mis-en-avant","style":{"spacing":{"padding":{"right":"var:preset|spacing|80","left":"var:preset|spacing|80","top":"var:preset|spacing|60","bottom":"var:preset|spacing|60"}}},"backgroundColor":"custom-transparent","layout":{"type":"constrained"}} -->
+<div class="wp-block-group produit-mis-en-avant has-custom-transparent-background-color has-background" style="padding-top:var(--wp--preset--spacing--60);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--60);padding-left:var(--wp--preset--spacing--80)"><!-- wp:template-part {"slug":"produit","area":"uncategorized"} /--></div>
+<!-- /wp:group -->
 
-<!-- wp:html -->
+<!-- wp:group {"className":"p5js-game","style":{"spacing":{"padding":{"right":"var:preset|spacing|60","left":"var:preset|spacing|60","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"0"},"dimensions":{"minHeight":"500px"}},"backgroundColor":"custom-transparent","layout":{"type":"constrained"}} -->
+<div class="wp-block-group p5js-game has-custom-transparent-background-color has-background" style="min-height:500px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--60);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--60)"><!-- wp:html -->
 <body>
 	<main></main>
 
@@ -25,4 +28,7 @@
 	<script src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/SideScroller/sketch-SideScroller.js"></script>
 </body>
 <!-- /wp:html --></div>
+<!-- /wp:group -->
+
+<!-- wp:template-part {"slug":"footer","area":"footer"} /--></div>
 <!-- /wp:group -->
