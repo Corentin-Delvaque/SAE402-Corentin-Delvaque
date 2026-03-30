@@ -1,13 +1,13 @@
 {
-  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "$schema": "https://schemas.wordpress.org/wp/6.7/theme.json",
   "version": 3,
   "title": "Bouton Game",
-  "slug": "btn_name",
+  "slug": "btn_game",
   "blockTypes": ["core/button"],
   "styles": {
-    "css": "&{border-radius:0px;}",
+    "css": "&{border-radius:0px;transition:all 0.2s ease;}&:hover{background:var(--wp--preset--color--custom-or);color:var(--wp--preset--color--custom-black);transform:translateY(-2px);}",
     "color": {
-      "background": "transparent",
+      "background": "var(--wp--preset--color--custom-or)",
       "text": "var(--wp--preset--color--custom-white)"
     },
     "border": {

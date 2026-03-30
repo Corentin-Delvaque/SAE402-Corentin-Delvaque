@@ -6,33 +6,23 @@ Version: 1.0
 
 /* WooCommerce Styles */
 
-:root {
-  --wc-ink: #021213;
-  --wc-midnight: #053335;
-  --wc-midnight-2: #0c4a4b;
-  --wc-panel: rgba(4, 23, 24, 0.92);
-  --wc-panel-alt: rgba(7, 31, 32, 0.86);
-  --wc-panel-soft: rgba(255, 255, 255, 0.04);
-  --wc-border: rgba(185, 150, 88, 0.38);
-  --wc-border-strong: #b99658;
-  --wc-border-soft: rgba(255, 255, 255, 0.1);
-  --wc-text: #f7f1e5;
-  --wc-text-muted: rgba(247, 241, 229, 0.76);
-  --wc-text-soft: rgba(247, 241, 229, 0.62);
-  --wc-shadow: 0 28px 70px rgba(0, 0, 0, 0.34);
-  --wc-shadow-soft: 0 14px 34px rgba(0, 0, 0, 0.2);
-  --wc-panel-padding: clamp(1.125rem, 2vw, 1.75rem);
-  --wc-page-gap: clamp(1.25rem, 3vw, 2.5rem);
+* {
+  font-weight: normal !important;
+}
+
+.wp-site-blocks .wp-block-group:first-child {
+  background: none;
+  padding: 0;
 }
 
 body.woocommerce,
 body.woocommerce-page {
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
 }
 
 .woocommerce,
 .woocommerce-page {
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
 }
 
 .woocommerce
@@ -74,18 +64,18 @@ body.woocommerce-page {
 }
 
 .woocommerce a:hover {
-  color: var(--wc-border-strong);
+  color: var(--wp--preset--color--custom-or);
 }
 
 .woocommerce :focus-visible {
-  outline: 2px solid var(--wc-border-strong);
+  outline: 2px solid var(--wp--preset--color--custom-or);
   outline-offset: 3px;
 }
 
 .wc-page {
   display: flex;
   flex-direction: column;
-  gap: var(--wc-page-gap);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
 }
 
 .wc-page > * {
@@ -96,7 +86,7 @@ body.woocommerce-page {
 .mycred-my-balance-wrapper::after {
   font-family: var(--wp--preset--font-family--rubis) !important;
   font-size: 1.5em;
-  color: green;
+  color: var(--wp--preset--color--custom-green-rubis);
 }
 
 .woocommerce-MyAccount-navigation-link a {
@@ -137,27 +127,36 @@ body.woocommerce-page {
 .woocommerce .woocommerce-product-details__short-description,
 .woocommerce .woocommerce-order-overview li {
   background:
-    linear-gradient(180deg, rgba(5, 30, 31, 0.96), rgba(8, 43, 44, 0.9)),
-    radial-gradient(circle at top right, rgba(185, 150, 88, 0.12), transparent 55%);
-  border: 1px solid var(--wc-border);
-  box-shadow: var(--wc-shadow);
-  padding: var(--wc-panel-padding);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--wp--preset--color--custom-green) 96%, transparent),
+      color-mix(in srgb, var(--wp--preset--color--custom-turquoise) 90%, transparent)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--wp--preset--color--custom-or) 12%, transparent),
+      transparent 55%
+    );
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
+  box-shadow: 0 28px 70px
+    color-mix(in srgb, var(--wp--preset--color--custom-black) 34%, transparent);
+  padding: clamp(1.125rem, 2vw, 1.75rem);
 }
 
 .woocommerce .woocommerce-MyAccount-navigation li a {
   background: none;
   border: none;
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
   display: flex;
-  padding: none;
+  padding: 0;
   font-family: var(--wp--preset--font-family--hylia-serif-beta);
-  border: 1px solid var(--wc-border);
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
   align-items: center;
   justify-content: center;
 }
 
 .wc-surface {
-  padding: var(--wc-panel-padding);
+  padding: clamp(1.125rem, 2vw, 1.75rem);
 }
 
 .woocommerce
@@ -174,16 +173,25 @@ body.woocommerce-page {
   align-items: center;
 
   background:
-    linear-gradient(180deg, rgba(5, 30, 31, 0.96), rgba(8, 43, 44, 0.9)),
-    radial-gradient(circle at top right, rgba(185, 150, 88, 0.1), transparent 55%);
-  border: 1px solid var(--wc-border);
-  box-shadow: var(--wc-shadow-soft);
-  color: var(--wc-text);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--wp--preset--color--custom-green) 96%, transparent),
+      color-mix(in srgb, var(--wp--preset--color--custom-turquoise) 90%, transparent)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--wp--preset--color--custom-or) 10%, transparent),
+      transparent 55%
+    );
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
+  box-shadow: 0 14px 34px
+    color-mix(in srgb, var(--wp--preset--color--custom-black) 20%, transparent);
+  color: var(--wp--preset--color--custom-white);
   padding: 1rem 1.2rem;
 }
 
 .woocommerce-info::before {
-  color: rgba(0, 0, 0, 0);
+  color: var(--wp--preset--color--custom-transparent);
 }
 
 .woocommerce-message::before {
@@ -191,11 +199,11 @@ body.woocommerce-page {
 }
 
 .woocommerce .woocommerce-message {
-  border-color: var(--wc-border-strong);
+  border-color: var(--wp--preset--color--custom-or);
 }
 
 .woocommerce .woocommerce-error {
-  border-color: rgba(235, 93, 75, 0.55);
+  border-color: color-mix(in srgb, var(--wp--preset--color--custom-error) 55%, transparent);
 }
 
 .woocommerce .woocommerce-error li + li {
@@ -207,11 +215,11 @@ body.woocommerce-page {
 }
 
 .wc-block-components-drawer__screen-overlay {
-  background: rgba(5, 51, 53, 0.33);
+  background: color-mix(in srgb, var(--wp--preset--color--custom-green) 33%, transparent);
 }
 
 .show-password-input {
-  background-color: rgba(255, 255, 255, 0);
+  background-color: var(--wp--preset--color--custom-transparent);
 }
 
 .woocommerce
@@ -232,7 +240,7 @@ body.woocommerce-page {
     .wp-block-button__link
   ):focus-visible,
 .wc-block-mini-cart__footer-checkout:hover {
-  color: #081516;
+  color: var(--wp--preset--color--custom-black);
 }
 
 .is-style-outline:hover {
@@ -241,6 +249,11 @@ body.woocommerce-page {
 
 header > a:first-child {
   width: 200px !important;
+}
+
+.wp-block-button__link:hover {
+  background: var(--wp--preset--color--custom-black) !important;
+  color: var(--wp--preset--color--custom-or) !important;
 }
 
 .woocommerce
@@ -270,9 +283,9 @@ header > a:first-child {
     textarea,
     .select2-selection--single
   ) {
-  background: rgba(1, 18, 18, 0.44);
-  border: 1px solid rgba(185, 150, 88, 0.34);
-  color: var(--wc-text);
+  background: color-mix(in srgb, var(--wp--preset--color--custom-black) 44%, transparent);
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 34%, transparent);
+  color: var(--wp--preset--color--custom-white);
   min-height: 48px;
   padding: 0.85rem 1rem;
   width: 100%;
@@ -298,17 +311,17 @@ header > a:first-child {
 }
 
 .woocommerce ::placeholder {
-  color: var(--wc-text-soft);
+  color: color-mix(in srgb, var(--wp--preset--color--custom-white) 62%, transparent);
 }
 
 .woocommerce label {
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
   letter-spacing: 0.03em;
 }
 
 .woocommerce form .form-row {
   margin-bottom: 1rem;
-  border: 1px solid var(--wc-border-strong);
+  border: 1px solid var(--wp--preset--color--custom-or);
   padding: 0.85rem 1rem;
 }
 
@@ -323,9 +336,9 @@ header > a:first-child {
 }
 
 .woocommerce form .form-row .input-text {
-  background-color: rgba(255, 255, 255, 0.03);
-  border: 1px solid var(--wc-border-soft);
-  color: var(--wc-text);
+  background-color: color-mix(in srgb, var(--wp--preset--color--custom-white) 3%, transparent);
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-white) 10%, transparent);
+  color: var(--wp--preset--color--custom-white);
 }
 
 .woocommerce form .form-row {
@@ -339,7 +352,7 @@ header > a:first-child {
 }
 
 .woocommerce form .form-row .required {
-  color: var(--wc-border-strong);
+  color: var(--wp--preset--color--custom-or);
   margin-left: 0.25rem;
   font-family: var(--wp--preset--font-family--inter);
 }
@@ -349,11 +362,20 @@ header > a:first-child {
 .woocommerce table.woocommerce-MyAccount-paymentMethods,
 .woocommerce table.woocommerce-checkout-review-order-table {
   background:
-    linear-gradient(180deg, rgba(5, 30, 31, 0.96), rgba(8, 43, 44, 0.9)),
-    radial-gradient(circle at top right, rgba(185, 150, 88, 0.1), transparent 55%);
-  border: 1px solid var(--wc-border);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--wp--preset--color--custom-green) 96%, transparent),
+      color-mix(in srgb, var(--wp--preset--color--custom-turquoise) 90%, transparent)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--wp--preset--color--custom-or) 10%, transparent),
+      transparent 55%
+    );
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
   border-collapse: collapse;
-  box-shadow: var(--wc-shadow);
+  box-shadow: 0 28px 70px
+    color-mix(in srgb, var(--wp--preset--color--custom-black) 34%, transparent);
   overflow: hidden;
   width: 100%;
 }
@@ -366,7 +388,8 @@ header > a:first-child {
 .woocommerce table.woocommerce-MyAccount-paymentMethods td,
 .woocommerce table.woocommerce-checkout-review-order-table th,
 .woocommerce table.woocommerce-checkout-review-order-table td {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--wp--preset--color--custom-white) 8%, transparent);
   padding: 0.95rem 1rem;
   vertical-align: top;
 }
@@ -375,7 +398,7 @@ header > a:first-child {
 .woocommerce table.woocommerce-orders-table thead th,
 .woocommerce table.woocommerce-MyAccount-paymentMethods thead th,
 .woocommerce table.woocommerce-checkout-review-order-table thead th {
-  background: rgba(0, 0, 0, 0.2);
+  background: color-mix(in srgb, var(--wp--preset--color--custom-black) 20%, transparent);
   font-family: var(--wp--preset--font-family--hylia-serif-beta);
   font-weight: 400;
   letter-spacing: 0.08em;
@@ -399,17 +422,26 @@ header > a:first-child {
 .woocommerce .wc-account-shell,
 .woocommerce .wc-order-confirmation-hero {
   background:
-    linear-gradient(135deg, rgba(2, 18, 19, 0.96), rgba(5, 51, 53, 0.88)),
-    radial-gradient(circle at top right, rgba(185, 150, 88, 0.18), transparent 55%);
-  border: 1px solid var(--wc-border);
-  box-shadow: var(--wc-shadow);
+    linear-gradient(
+      135deg,
+      color-mix(in srgb, var(--wp--preset--color--custom-black) 96%, transparent),
+      color-mix(in srgb, var(--wp--preset--color--custom-green) 88%, transparent)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--wp--preset--color--custom-or) 18%, transparent),
+      transparent 55%
+    );
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
+  box-shadow: 0 28px 70px
+    color-mix(in srgb, var(--wp--preset--color--custom-black) 34%, transparent);
   padding: clamp(1.5rem, 3vw, 3rem);
 }
 
 .woocommerce .wc-woocommerce-shell,
 .woocommerce .wc-order-confirmation-shell {
   display: grid;
-  gap: var(--wc-page-gap);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
 }
 
 .woocommerce .wc-archive-hero .woocommerce-breadcrumb,
@@ -422,16 +454,16 @@ header > a:first-child {
 .woocommerce-breadcrumb,
 .woocommerce-result-count {
   font-family: var(--wp--preset--font-family--hylia-serif-beta) !important;
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
 }
 
 .wp-block-button__link,
 .woocommerce-Button {
-  border: solid 1px var(--wc-border-strong) !important;
+  border: solid 1px var(--wp--preset--color--custom-or) !important;
 }
 
 .wc-block-mini-cart__footer-checkout {
-  background-color: var(--wc-border-strong);
+  background-color: var(--wp--preset--color--custom-or);
 }
 
 .woocommerce
@@ -455,7 +487,7 @@ header > a:first-child {
 .woocommerce
   .wc-archive-hero
   :is(.term-description, .wp-block-term-description, .woocommerce-products-header__description) {
-  color: var(--wc-text-muted);
+  color: color-mix(in srgb, var(--wp--preset--color--custom-white) 76%, transparent);
   font-size: 1.05rem;
   max-width: 72ch;
 }
@@ -463,10 +495,19 @@ header > a:first-child {
 .woocommerce .wc-shop-toolbar {
   align-items: center;
   background:
-    linear-gradient(180deg, rgba(5, 30, 31, 0.96), rgba(8, 43, 44, 0.9)),
-    radial-gradient(circle at top right, rgba(185, 150, 88, 0.1), transparent 55%);
-  border: 1px solid var(--wc-border);
-  box-shadow: var(--wc-shadow-soft);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--wp--preset--color--custom-green) 96%, transparent),
+      color-mix(in srgb, var(--wp--preset--color--custom-turquoise) 90%, transparent)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--wp--preset--color--custom-or) 10%, transparent),
+      transparent 55%
+    );
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
+  box-shadow: 0 14px 34px
+    color-mix(in srgb, var(--wp--preset--color--custom-black) 20%, transparent);
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
@@ -502,10 +543,19 @@ header > a:first-child {
 .woocommerce ul.products.wc-products-grid > li.product,
 .woocommerce ul.products.wc-products-grid > li.product-category {
   background:
-    linear-gradient(180deg, rgba(5, 30, 31, 0.96), rgba(8, 43, 44, 0.9)),
-    radial-gradient(circle at top right, rgba(185, 150, 88, 0.12), transparent 55%);
-  border: 1px solid var(--wc-border);
-  box-shadow: var(--wc-shadow-soft);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--wp--preset--color--custom-green) 96%, transparent),
+      color-mix(in srgb, var(--wp--preset--color--custom-turquoise) 90%, transparent)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--wp--preset--color--custom-or) 12%, transparent),
+      transparent 55%
+    );
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
+  box-shadow: 0 14px 34px
+    color-mix(in srgb, var(--wp--preset--color--custom-black) 20%, transparent);
   display: flex;
   flex-direction: column;
   gap: 0.8rem;
@@ -542,19 +592,19 @@ header > a:first-child {
 .woocommerce
   ul.products.wc-products-grid
   :is(.woocommerce-loop-product__title, .wp-block-post-title, .wc-block-grid__product-title) {
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
   font-size: 1.15rem;
   line-height: 1.2;
   margin: 0;
 }
 
 .wc-block-grid__product-link {
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
   text-decoration: none;
 }
 
 .wc-block-grid__product-title {
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
   font-size: 1.15rem;
   line-height: 1.2;
   margin: 0;
@@ -604,6 +654,27 @@ header > a:first-child {
     no-repeat center/contain;
 }
 
+.woocommerce-hero::before {
+  content: "";
+  position: absolute;
+  top: 400px;
+  width: 30em;
+  height: 50px;
+  background: url("http://la-boutique-zelda.wp.local/wp-content/uploads/2026/03/Triforce-Ornement-1.png")
+    no-repeat left/contain;
+}
+
+.woocommerce-hero::after {
+  content: "";
+  position: absolute;
+  top: -100px;
+  width: 30em;
+  height: 50px;
+  rotate: 180deg;
+  background: url("http://la-boutique-zelda.wp.local/wp-content/uploads/2026/03/Triforce-Ornement-1.png")
+    no-repeat right/contain;
+}
+
 .woocommerce
   .wc-products-grid
   :is(.price, .woocommerce-Price-amount, .wp-block-woocommerce-product-price),
@@ -613,23 +684,27 @@ header > a:first-child {
 .woocommerce
   ul.products.wc-products-grid
   :is(.price, .woocommerce-Price-amount, .wp-block-woocommerce-product-price) {
-  color: var(--wc-border-strong);
+  color: var(--wp--preset--color--custom-or);
+}
+
+.woocommerce-Price-amount {
+  font-family: var(--wp--preset--font-family--hylia-serif-beta);
 }
 
 .wc-block-components-product-sale-badge {
-  background-color: var(--wc-border-strong);
+  background-color: var(--wp--preset--color--custom-or);
   color: var(--wp--preset--color--custom-black);
   font-size: 1rem;
 }
 
 .wc-block-grid__product-onsale {
-  background-color: var(--wc-border-strong);
+  background-color: var(--wp--preset--color--custom-or);
 }
 
 .wc-block-grid .wc-block-grid__product-onsale,
 .wc-block-grid__product-image .wc-block-grid__product-onsale {
   font-size: 1rem;
-  background-color: var(--wc-border-strong);
+  background-color: var(--wp--preset--color--custom-or);
   color: var(--wp--preset--color--custom-black);
 }
 
@@ -669,7 +744,7 @@ header > a:first-child {
 .woocommerce div.product.wc-single-product-card {
   align-items: start;
   display: grid;
-  gap: var(--wc-page-gap);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
   grid-template-columns: minmax(0, min(100%, 540px)) minmax(0, 1fr);
 }
 
@@ -683,11 +758,20 @@ header > a:first-child {
 .woocommerce div.product .woocommerce-product-gallery,
 .woocommerce div.product .summary.entry-summary {
   background:
-    linear-gradient(180deg, rgba(5, 30, 31, 0.96), rgba(8, 43, 44, 0.9)),
-    radial-gradient(circle at top right, rgba(185, 150, 88, 0.12), transparent 55%);
-  border: 1px solid var(--wc-border);
-  box-shadow: var(--wc-shadow);
-  padding: var(--wc-panel-padding);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--wp--preset--color--custom-green) 96%, transparent),
+      color-mix(in srgb, var(--wp--preset--color--custom-turquoise) 90%, transparent)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--wp--preset--color--custom-or) 12%, transparent),
+      transparent 55%
+    );
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
+  box-shadow: 0 28px 70px
+    color-mix(in srgb, var(--wp--preset--color--custom-black) 34%, transparent);
+  padding: clamp(1.125rem, 2vw, 1.75rem);
 }
 
 .woocommerce .wc-product-gallery .woocommerce-product-gallery,
@@ -717,7 +801,7 @@ header > a:first-child {
 
 .woocommerce .wc-product-summary .price,
 .woocommerce div.product .summary.entry-summary .price {
-  color: var(--wc-border-strong);
+  color: var(--wp--preset--color--custom-or);
   font-size: clamp(1.25rem, 2vw, 1.9rem);
   font-weight: 600;
   margin: 0;
@@ -730,7 +814,7 @@ header > a:first-child {
 
 .woocommerce .wc-product-summary .woocommerce-product-details__short-description,
 .woocommerce div.product .summary.entry-summary .woocommerce-product-details__short-description {
-  color: var(--wc-text-muted);
+  color: color-mix(in srgb, var(--wp--preset--color--custom-white) 76%, transparent);
   line-height: 1.8;
   margin: 0;
   padding: 0;
@@ -757,8 +841,8 @@ header > a:first-child {
 
 .woocommerce .wc-product-summary .product_meta,
 .woocommerce div.product .summary.entry-summary .product_meta {
-  border-top: 1px solid var(--wc-border);
-  color: var(--wc-text-muted);
+  border-top: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
+  color: color-mix(in srgb, var(--wp--preset--color--custom-white) 76%, transparent);
   display: flex;
   flex-direction: column;
   gap: 0.45rem;
@@ -777,11 +861,20 @@ header > a:first-child {
 .woocommerce .wc-cart-totals,
 .woocommerce .wc-cross-sells {
   background:
-    linear-gradient(180deg, rgba(5, 30, 31, 0.96), rgba(8, 43, 44, 0.9)),
-    radial-gradient(circle at top right, rgba(185, 150, 88, 0.12), transparent 55%);
-  border: 1px solid var(--wc-border);
-  box-shadow: var(--wc-shadow);
-  padding: var(--wc-panel-padding);
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, var(--wp--preset--color--custom-green) 96%, transparent),
+      color-mix(in srgb, var(--wp--preset--color--custom-turquoise) 90%, transparent)
+    ),
+    radial-gradient(
+      circle at top right,
+      color-mix(in srgb, var(--wp--preset--color--custom-or) 12%, transparent),
+      transparent 55%
+    );
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
+  box-shadow: 0 28px 70px
+    color-mix(in srgb, var(--wp--preset--color--custom-black) 34%, transparent);
+  padding: clamp(1.125rem, 2vw, 1.75rem);
 }
 
 .woocommerce .wc-product-details {
@@ -809,7 +902,7 @@ header > a:first-child {
 
 .woocommerce .wc-cart-table img,
 .woocommerce .woocommerce-cart-form__contents img {
-  border: 1px solid var(--wc-border);
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
   display: block;
   height: auto;
   max-width: 84px;
@@ -851,7 +944,7 @@ header > a:first-child {
 
 .woocommerce .wc-checkout-form {
   display: grid;
-  gap: var(--wc-page-gap);
+  gap: clamp(1.25rem, 3vw, 2.5rem);
 }
 
 .woocommerce .wc-checkout-columns {
@@ -884,8 +977,8 @@ header > a:first-child {
 }
 
 .woocommerce .wc-checkout-payment .wc_payment_methods > li {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: color-mix(in srgb, var(--wp--preset--color--custom-white) 3%, transparent);
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-white) 8%, transparent);
   padding: 0.95rem;
 }
 
@@ -894,7 +987,7 @@ header > a:first-child {
 }
 
 .woocommerce .woocommerce-terms-and-conditions-wrapper {
-  color: var(--wc-text-muted);
+  color: color-mix(in srgb, var(--wp--preset--color--custom-white) 76%, transparent);
   display: grid;
   gap: 0.75rem;
 }
@@ -906,7 +999,7 @@ header > a:first-child {
 .woocommerce .wc-checkout-shell .woocommerce-billing-fields,
 .woocommerce .wc-checkout-shell .woocommerce-shipping-fields,
 .woocommerce .wc-checkout-shell .woocommerce-additional-fields {
-  padding: var(--wc-panel-padding);
+  padding: clamp(1.125rem, 2vw, 1.75rem);
 }
 
 .woocommerce .wc-order-confirmation-hero {
@@ -970,8 +1063,8 @@ header > a:first-child {
 }
 
 .woocommerce .wc-account-nav li a {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: color-mix(in srgb, var(--wp--preset--color--custom-white) 3%, transparent);
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-white) 8%, transparent);
   display: flex;
   padding: 0.85rem 1rem;
   text-decoration: none;
@@ -983,9 +1076,9 @@ header > a:first-child {
 
 .woocommerce .wc-account-nav li.is-active a,
 .woocommerce .wc-account-nav li a[aria-current="page"] {
-  background: rgba(185, 150, 88, 0.16);
-  border-color: var(--wc-border-strong);
-  color: var(--wc-text);
+  background: color-mix(in srgb, var(--wp--preset--color--custom-or) 16%, transparent);
+  border-color: var(--wp--preset--color--custom-or);
+  color: var(--wp--preset--color--custom-white);
 }
 
 .woocommerce .wc-account-content {
@@ -1000,7 +1093,7 @@ header > a:first-child {
 
 .woocommerce .wc-account-login-panel,
 .woocommerce .wc-account-register-panel {
-  padding: var(--wc-panel-padding);
+  padding: clamp(1.125rem, 2vw, 1.75rem);
 }
 
 .woocommerce .wc-account-auth .woocommerce-form {
@@ -1008,7 +1101,7 @@ header > a:first-child {
 }
 
 .woocommerce-form-login {
-  border: var(--wc-border-strong);
+  border: 1px solid var(--wp--preset--color--custom-or);
 }
 
 .woocommerce .woocommerce-MyAccount-orders .button,
@@ -1024,7 +1117,7 @@ header > a:first-child {
 }
 
 .wc-block-components-product-name {
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
   font-size: 1.25em !important;
   line-height: 1.2;
   margin: 0;
@@ -1044,7 +1137,7 @@ header > a:first-child {
 }
 
 .wc-block-components-totals-item {
-  color: var(--wc-text);
+  color: var(--wp--preset--color--custom-white);
   font-family: var(--wp--preset--font-family--hylia-serif-beta);
 }
 
@@ -1067,7 +1160,7 @@ header > a:first-child {
 }
 
 .woocommerce .widget_price_filter .price_label {
-  color: var(--wc-text-muted);
+  color: color-mix(in srgb, var(--wp--preset--color--custom-white) 76%, transparent);
 }
 
 .woocommerce .woocommerce-mini-cart-contents {
@@ -1087,7 +1180,8 @@ header > a:first-child {
 }
 
 .woocommerce .woocommerce-mini-cart-item {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid
+    color-mix(in srgb, var(--wp--preset--color--custom-white) 8%, transparent);
   padding-bottom: 1rem;
 }
 
@@ -1097,7 +1191,7 @@ header > a:first-child {
 }
 
 .woocommerce .woocommerce-mini-cart-item img {
-  border: 1px solid var(--wc-border);
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-or) 38%, transparent);
   display: inline-block;
   margin-right: 0.65rem;
   vertical-align: middle;
@@ -1129,8 +1223,8 @@ header > a:first-child {
 }
 
 .woocommerce .commentlist li {
-  background: rgba(255, 255, 255, 0.03);
-  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: color-mix(in srgb, var(--wp--preset--color--custom-white) 3%, transparent);
+  border: 1px solid color-mix(in srgb, var(--wp--preset--color--custom-white) 8%, transparent);
   padding: 1rem;
 }
 

@@ -8,44 +8,39 @@
 			"defaultPalette": false,
 			"palette": [
 				{
-					"color": "#0073aa",
-					"name": "Primary",
-					"slug": "primary"
-				},
-				{
-					"color": "#005177",
-					"name": "Secondary",
-					"slug": "secondary"
-				},
-				{
-					"color": "#d54e21",
-					"name": "Accent",
-					"slug": "accent"
-				},
-				{
-					"color": "#ffffff",
-					"name": "White",
-					"slug": "custom-white"
-				},
-				{
-					"color": "#000000",
-					"name": "Green",
-					"slug": "custom-green"
-				},
-				{
-					"color": "#053335",
-					"name": "Turquoise",
-					"slug": "custom-turquoise"
-				},
-				{
-					"color": "#000",
-					"name": "Black",
+					"color": "#020203",
+					"name": "Ink",
 					"slug": "custom-black"
 				},
 				{
+					"color": "#053335",
+					"name": "Midnight",
+					"slug": "custom-green"
+				},
+				{
+					"color": "#0c4a4b",
+					"name": "Aqua",
+					"slug": "custom-turquoise"
+				},
+				{
+					"color": "#f7f1e5",
+					"name": "Paper",
+					"slug": "custom-white"
+				},
+				{
 					"color": "#b99658",
-					"name": "Or",
+					"name": "Gold",
 					"slug": "custom-or"
+				},
+				{
+					"color": "#008000",
+					"name": "Green - Rubis",
+					"slug": "custom-green-rubis"
+				},
+				{
+					"color": "#eb5d4b",
+					"name": "Error",
+					"slug": "custom-error"
 				},
 				{
 					"color": "#ffffff00",
@@ -134,22 +129,6 @@
 			"backgroundSize": "40px"
 		},
 		"blocks": {
-			"core/button": {
-				"variations": {
-					"btn_name": {
-						"border": {
-							"color": "var(--wp--preset--color--custom-or)",
-							"style": "solid",
-							"width": "3px"
-						},
-						"color": {
-							"background": "transparent",
-							"text": "var(--wp--preset--color--custom-white)"
-						},
-						"css": "&{border-radius:0px;}"
-					}
-				}
-			},
 			"core/group": {
 				"color": {
 					"background": "var(--wp--preset--color--custom-green)"
@@ -165,7 +144,7 @@
 			}
 		},
 		"color": {
-			"background": "var(--wp--preset--color--custom-turquoise)",
+			"background": "var(--wp--preset--color--custom-green)",
 			"text": "var(--wp--preset--color--custom-white)"
 		},
 		"elements": {
