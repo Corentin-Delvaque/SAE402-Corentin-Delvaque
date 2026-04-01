@@ -85,7 +85,7 @@ body.woocommerce-page {
 .woocommerce-Price-currencySymbol,
 .mycred-my-balance-wrapper::after {
   font-family: var(--wp--preset--font-family--rubis) !important;
-  font-size: 1.75em !important;
+  font-size: 1.5em;
   color: var(--wp--preset--color--custom-green-rubis);
 }
 
@@ -103,6 +103,7 @@ body.woocommerce-page {
 
 .wc-block-components-product-price__value {
   font-family: var(--wp--preset--font-family--hylia-serif-beta);
+  font-size: 1.25em;
 }
 
 .wc-surface,
@@ -514,6 +515,7 @@ h2.wc-block-mini-cart__title {
 .woocommerce
   .wc-archive-hero
   :is(.wp-block-query-title, .woocommerce-products-header__title, .page-title) {
+  font-size: clamp(2.3rem, 5vw, 4.8rem);
   line-height: 0.95;
 }
 
@@ -521,6 +523,7 @@ h2.wc-block-mini-cart__title {
   .wc-archive-hero
   :is(.term-description, .wp-block-term-description, .woocommerce-products-header__description) {
   color: color-mix(in srgb, var(--wp--preset--color--custom-white) 76%, transparent);
+  font-size: 1.05rem;
   max-width: 72ch;
 }
 
@@ -625,7 +628,7 @@ h2.wc-block-mini-cart__title {
   ul.products.wc-products-grid
   :is(.woocommerce-loop-product__title, .wp-block-post-title, .wc-block-grid__product-title) {
   color: var(--wp--preset--color--custom-white);
-
+  font-size: 1.15rem;
   line-height: 1.2;
   margin: 0;
 }
@@ -637,7 +640,7 @@ h2.wc-block-mini-cart__title {
 
 .wc-block-grid__product-title {
   color: var(--wp--preset--color--custom-white);
-
+  font-size: 1.15rem;
   line-height: 1.2;
   margin: 0;
   text-decoration: none;
@@ -645,7 +648,7 @@ h2.wc-block-mini-cart__title {
 
 .mycred-my-balance-wrapper {
   font-family: var(--wp--preset--font-family--hylia-serif-beta);
-
+  font-size: var(--wp--preset--font-size--navigation);
   display: flex;
   align-items: center;
   padding: 0 0.33rem;
@@ -731,6 +734,7 @@ h2.wc-block-mini-cart__title {
 .wc-block-components-product-sale-badge {
   background-color: var(--wp--preset--color--custom-or);
   color: var(--wp--preset--color--custom-black);
+  font-size: 1rem;
 }
 
 .wc-block-grid__product-onsale {
@@ -739,6 +743,7 @@ h2.wc-block-mini-cart__title {
 
 .wc-block-grid .wc-block-grid__product-onsale,
 .wc-block-grid__product-image .wc-block-grid__product-onsale {
+  font-size: 1rem;
   background-color: var(--wp--preset--color--custom-or);
   color: var(--wp--preset--color--custom-black);
 }
@@ -830,13 +835,14 @@ h2.wc-block-mini-cart__title {
 
 .woocommerce .wc-product-summary .product_title,
 .woocommerce div.product .summary.entry-summary .product_title {
+  font-size: clamp(2.2rem, 4vw, 4rem);
   margin: 0;
 }
 
 .woocommerce .wc-product-summary .price,
 .woocommerce div.product .summary.entry-summary .price {
   color: var(--wp--preset--color--custom-or);
-
+  font-size: clamp(1.25rem, 2vw, 1.9rem);
   font-weight: 600;
   margin: 0;
 }
@@ -1150,8 +1156,16 @@ h2.wc-block-mini-cart__title {
   gap: 0.75rem;
 }
 
+.wc-block-components-product-name {
+  color: var(--wp--preset--color--custom-white);
+  font-size: 1.25em !important;
+  line-height: 1.2;
+  margin: 0;
+}
+
 .wc-block-components-product-metadata__description p {
   font-family: var(--wp--preset--font-family--hylia-serif-beta);
+  font-size: 0.75rem !important;
 }
 
 .wc-block-components-quantity-selector .wc-block-components-quantity-selector__input {
@@ -1343,9 +1357,20 @@ h2.wc-block-mini-cart__title {
     grid-template-columns: 1fr;
   }
 
+  .woocommerce table.shop_table,
+  .woocommerce table.woocommerce-orders-table,
+  .woocommerce table.woocommerce-MyAccount-paymentMethods,
+  .woocommerce table.woocommerce-checkout-review-order-table {
+    font-size: 0.95rem;
+  }
+
   .produit-mis-en-avant {
     margin: 0rem !important;
     padding: 0.5rem !important;
+  }
+
+  .woocommerce-coupon-code {
+    font-size: 0.75em !important;
   }
 
   .wc-block-featured-product__background-image {
@@ -1487,7 +1512,12 @@ h2.wc-block-mini-cart__title {
   .woocommerce .wc-order-confirmation-grid {
     grid-template-columns: 1fr !important;
   }
-
+  .product-name {
+    font-size: 2rem !important;
+  }
+  .woocommerce-Price-amount {
+    font-size: 1.5rem !important;
+  }
   .woocommerce-hero-container {
     padding: 4rem !important;
   }
@@ -1495,10 +1525,16 @@ h2.wc-block-mini-cart__title {
 
 /* Ultra petit écran */
 @media (max-width: 480px) {
+  .woocommerce {
+    font-size: 14px;
+  }
+
   .woocommerce .button {
     width: 100%;
   }
-
+  .woocommerce-Price-amount {
+    font-size: 1rem !important;
+  }
   .woocommerce-hero-container {
     padding: 1rem !important;
   }
@@ -1520,3 +1556,5 @@ h2.wc-block-mini-cart__title {
 [data-wp-text="state.itemPrice"] {
   display: none;
 }
+
+/*
