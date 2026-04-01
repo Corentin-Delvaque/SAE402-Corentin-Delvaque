@@ -1263,8 +1263,13 @@ h2.wc-block-mini-cart__title {
   text-decoration: none !important;
 }
 
-.p5js-game main {
+.p5js-game canvas {
   border: 2px solid var(--wp--preset--color--custom-or);
+  display: block;
+}
+
+.p5js-game {
+  overflow: hidden;
 }
 
 .variations,

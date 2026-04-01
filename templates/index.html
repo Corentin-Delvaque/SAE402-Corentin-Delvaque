@@ -11,33 +11,29 @@
 		<!-- wp:template-part {"slug":"produit","theme":"zeldaskywardsword","area":"uncategorized"} /--></div>
 	<!-- /wp:group -->
 
-	<!-- wp:group {"className":"p5js-game","style":{"spacing":{"padding":{"right":"var:preset|spacing|80","left":"var:preset|spacing|80","top":"var:preset|spacing|50","bottom":"var:preset|spacing|50"},"blockGap":"0"},"dimensions":{"minHeight":"500px"}},"backgroundColor":"custom-transparent","layout":{"type":"constrained"}} -->
-	<div class="wp-block-group p5js-game has-custom-transparent-background-color has-background"
-		style="min-height:500px;padding-top:var(--wp--preset--spacing--50);padding-right:var(--wp--preset--spacing--80);padding-bottom:var(--wp--preset--spacing--50);padding-left:var(--wp--preset--spacing--80)">
-		<!-- wp:html -->
+	<!-- wp:html -->
+	<div id="p5js-game-container"></div>
 
-		<body>
-			<main></main>
+	<link rel="stylesheet"
+		href="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/style.css">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/p5.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.0/addons/p5.sound.min.js"></script>
 
-			<!-- ONLINE LINKS -->
-			<script src="https://q5js.org/q5.js"></script>
-			<script src="https://p5play.org/v3/planck.min.js"></script>
-			<script src="https://p5play.org/v3/p5play.js"></script>
-
-			<!-- OFFLINE LINKS -->
-			<!--
-	<script src="node_modules/q5/q5.js"></script>
-	<script src="node_modules/p5play/planck.min.js"></script>
-	<script src="node_modules/p5play/p5play.js"></script>
-	-->
-
-			<!-- YOUR SKETCH -->
-			<script
-				src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/SideScroller/sketch-SideScroller.js"></script>
-		</body>
-		<!-- /wp:html -->
-	</div>
-	<!-- /wp:group -->
+	<script
+		src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/script.js"></script>
+	<script
+		src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/script-perso.js"></script>
+	<script
+		src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/script-bg.js"></script>
+	<script
+		src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/script-element.js"></script>
+	<script
+		src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/script-interaction.js"></script>
+	<script
+		src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/script-overlay.js"></script>
+	<script
+		src="http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/script-sound.js"></script>
+	<!-- /wp:html -->
 
 	<!-- wp:template-part {"slug":"footer","theme":"zeldaskywardsword","area":"footer"} /-->
 </div>
