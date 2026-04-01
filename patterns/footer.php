@@ -48,11 +48,11 @@
 
 <!-- wp:buttons {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
 <div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://la-boutique-zelda.wp.local/privacy-policy/"><?php esc_html_e('Politique de confidentialité', '');?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://corentindelvaque-zuilo-studio.wp.build/privacy-policy/"><?php esc_html_e('Politique de confidentialité', '');?></a></div>
 <!-- /wp:button -->
 
 <!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://la-boutique-zelda.wp.local/remboursements_retours/"><?php esc_html_e('Politique de remboursements', '');?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://corentindelvaque-zuilo-studio.wp.build/remboursements_retours/"><?php esc_html_e('Politique de remboursements', '');?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group -->

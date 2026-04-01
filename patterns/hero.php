@@ -14,7 +14,7 @@ echo sprintf( esc_html__( 'TERRY %1$sE-shop', '' ), '<br>' ); ?></h1>
 
 <!-- wp:buttons -->
 <div class="wp-block-buttons"><!-- wp:button {"backgroundColor":"custom-or","textColor":"custom-black","className":"is-style-btn_name is-style-btn_game","style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-black"}}}}} -->
-<div class="wp-block-button is-style-btn_name is-style-btn_game"><a class="wp-block-button__link has-custom-black-color has-custom-or-background-color has-text-color has-background has-link-color wp-element-button" href="http://la-boutique-zelda.wp.local/boutique/"><?php esc_html_e('Découvrir maintenant', '');?></a></div>
+<div class="wp-block-button is-style-btn_name is-style-btn_game"><a class="wp-block-button__link has-custom-black-color has-custom-or-background-color has-text-color has-background has-link-color wp-element-button" href="https://corentindelvaque-zuilo-studio.wp.build/boutique/"><?php esc_html_e('Découvrir maintenant', '');?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons --></div>
 <!-- /wp:group --></div></div>

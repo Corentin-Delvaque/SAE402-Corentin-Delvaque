@@ -26,7 +26,7 @@
 
 <!-- wp:buttons {"backgroundColor":"custom-transparent","layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-buttons has-custom-transparent-background-color has-background"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="http://la-boutique-zelda.wp.local/produit/epee-de-legende/"><?php esc_html_e('Acheter maintenant', '');?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://corentindelvaque-zuilo-studio.wp.build/produit/epee-de-legende/"><?php esc_html_e('Acheter maintenant', '');?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
