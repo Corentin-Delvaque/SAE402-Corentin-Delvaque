@@ -16,13 +16,19 @@ let xCloudFar = 0;
 function initBg() {
   // Charge les images (alternative à preload())
   cloudClose = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/nuages/cloud-close.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/nuages/cloud-close.png",
+    ),
   );
   cloudMedium = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/nuages/cloud-medium.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/nuages/cloud-medium.png",
+    ),
   );
   cloudFar = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/nuages/cloud-far.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/nuages/cloud-far.png",
+    ),
   );
 }
 

@@ -11,28 +11,28 @@ let crySoundInterval = 3000; // Délai minimum entre les cris (en millisecondes)
 
 function initSounds() {
   endSound = loadSound(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/son/zelda-chest.mp3",
+    window.zeldaskywardswordGame.assetUrl("assets/son/zelda-chest.mp3"),
   );
   startSound = loadSound(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/son/zelda-chest.mp3",
+    window.zeldaskywardswordGame.assetUrl("assets/son/zelda-chest.mp3"),
   );
   islandSound = loadSound(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/son/hit-island.mp3",
+    window.zeldaskywardswordGame.assetUrl("assets/son/hit-island.mp3"),
   );
   rubySound = loadSound(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/son/collect-ruby.mp3",
+    window.zeldaskywardswordGame.assetUrl("assets/son/collect-ruby.mp3"),
   );
   heartSound = loadSound(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/son/collect-heart.mp3",
+    window.zeldaskywardswordGame.assetUrl("assets/son/collect-heart.mp3"),
   );
   flapSound = loadSound(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/son/flap-bird.mp3",
+    window.zeldaskywardswordGame.assetUrl("assets/son/flap-bird.mp3"),
   );
   crySound = loadSound(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/son/eagle-sound.mp3",
+    window.zeldaskywardswordGame.assetUrl("assets/son/eagle-sound.mp3"),
   );
   music = loadSound(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/son/Exploring-The-Sky.mp3",
+    window.zeldaskywardswordGame.assetUrl("assets/son/Exploring-The-Sky.mp3"),
   );
 
   endSound.setVolume(0.3);

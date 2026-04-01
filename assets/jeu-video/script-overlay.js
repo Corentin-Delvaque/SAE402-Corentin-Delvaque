@@ -7,19 +7,27 @@ let isMenu = false;
 
 function initOverlay() {
   stats = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/statistiques.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/statistiques.png",
+    ),
   );
   Menu = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/valeurs-rubis.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/valeurs-rubis.png",
+    ),
   );
   MenuMini = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/valeurs-rubis-mini.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/valeurs-rubis-mini.png",
+    ),
   );
   overStart = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/over-start.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/over-start.png",
+    ),
   );
   overEnd = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/over-end.png",
+    window.zeldaskywardswordGame.assetUrl("assets/images/over-end.png"),
   );
 }
 

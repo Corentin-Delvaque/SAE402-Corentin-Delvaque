@@ -25,22 +25,28 @@ let bonusFamily = {
 
 function initElements() {
   rubyGreen = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/rubis/rubis-vert.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/rubis/rubis-vert.png",
+    ),
   );
   rubyBlue = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/rubis/rubis-bleu.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/rubis/rubis-bleu.png",
+    ),
   );
   rubyRed = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/rubis/rubis-rouge.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/rubis/rubis-rouge.png",
+    ),
   );
   rubyGold = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/rubis/rubis-or.png",
+    window.zeldaskywardswordGame.assetUrl("assets/images/rubis/rubis-or.png"),
   );
   island = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/ile.png",
+    window.zeldaskywardswordGame.assetUrl("assets/images/ile.png"),
   );
   heart = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/coeur.png",
+    window.zeldaskywardswordGame.assetUrl("assets/images/coeur.png"),
   );
 }
 

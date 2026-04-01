@@ -20,10 +20,14 @@ let settingsPerso = {
 function initPerso() {
   // Charge les images (alternative à preload())
   settingsPerso.imgPerso = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/celestriers/celestrier-plane.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/celestriers/celestrier-plane.png",
+    ),
   );
   settingsPerso.imgPersoJump = loadImage(
-    "http://la-boutique-zelda.wp.local/wp-content/themes/zeldaskywardsword/assets/jeu-video/assets/images/celestriers/celestrier-vol.png",
+    window.zeldaskywardswordGame.assetUrl(
+      "assets/images/celestriers/celestrier-vol.png",
+    ),
   );
 }
 
