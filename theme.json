@@ -1,291 +1,283 @@
 {
-	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
-	"version": 3,
-	"settings": {
-		"appearanceTools": true,
-		"color": {
-			"custom": false,
-			"defaultPalette": false,
-			"palette": [
-				{
-					"color": "#020203",
-					"name": "Ink",
-					"slug": "custom-black"
-				},
-				{
-					"color": "#053335",
-					"name": "Midnight",
-					"slug": "custom-green"
-				},
-				{
-					"color": "#0c4a4b",
-					"name": "Aqua",
-					"slug": "custom-turquoise"
-				},
-				{
-					"color": "#f7f1e5",
-					"name": "Paper",
-					"slug": "custom-white"
-				},
-				{
-					"color": "#b99658",
-					"name": "Gold",
-					"slug": "custom-or"
-				},
-				{
-					"color": "#008000",
-					"name": "Green - Rubis",
-					"slug": "custom-green-rubis"
-				},
-				{
-					"color": "#eb5d4b",
-					"name": "Error",
-					"slug": "custom-error"
-				},
-				{
-					"color": "#ffffff00",
-					"name": "Transparent",
-					"slug": "custom-transparent"
-				}
-			]
-		},
-		"typography": {
-			"fluid": true,
-			"fontFamilies": [
-				{
-					"fontFace": [
-						{
-							"fontFamily": "\"Hylia Serif Beta\"",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/hylia-serif-beta/hylia-serif-beta-400-normal.otf"
-							]
-						}
-					],
-					"fontFamily": "\"Hylia Serif Beta\"",
-					"name": "Hylia Serif Beta",
-					"slug": "hylia-serif-beta"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Inter",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [
-								"http://la-boutique-zelda.wp.local/wp-content/plugins/woocommerce/assets/fonts/Inter-VariableFont_slnt,wght.woff2"
-							]
-						}
-					],
-					"fontFamily": "\"Inter\", sans-serif",
-					"name": "Inter",
-					"slug": "inter"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Cardo",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"http://la-boutique-zelda.wp.local/wp-content/plugins/woocommerce/assets/fonts/cardo_normal_400.woff2"
-							]
-						}
-					],
-					"fontFamily": "Cardo",
-					"name": "Cardo",
-					"slug": "cardo"
-				},
-				{
-					"fontFace": [
-						{
-							"fontFamily": "Rubis",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/rubis/rubis-400-normal.otf"
-							]
-						}
-					],
-					"fontFamily": "Rubis",
-					"name": "Rubis",
-					"slug": "rubis"
-				}
-			],
-			"fontSizes": [
-				{
-					"fluid": {
-						"max": "1rem",
-						"min": "0.5rem"
-					},
-					"name": "Base",
-					"size": "1rem",
-					"slug": "base"
-				},
-				{
-					"fluid": {
-						"max": "1.25rem",
-						"min": "1rem"
-					},
-					"name": "Navigation",
-					"size": "16px",
-					"slug": "navigation"
-				},
-				{
-					"fluid": {
-						"max": "40px",
-						"min": "25px"
-					},
-					"name": "Produit",
-					"size": "30px",
-					"slug": "produit"
-				},
-				{
-					"fluid": {
-						"max": "60px",
-						"min": "40px"
-					},
-					"name": "Section",
-					"size": "30px",
-					"slug": "section"
-				},
-				{
-					"fluid": {
-						"max": "8rem",
-						"min": "5rem"
-					},
-					"name": "Hero",
-					"size": "6.1rem",
-					"slug": "hero"
-				}
-			]
-		}
-	},
-	"styles": {
-		"background": {
-			"backgroundAttachment": "fixed",
-			"backgroundImage": {
-				"id": 114,
-				"source": "file",
-				"title": "pattern-triforce",
-				"url": "http://la-boutique-zelda.wp.local/wp-content/uploads/2026/03/pattern-triforce.png"
-			},
-			"backgroundPosition": "50% 0",
-			"backgroundRepeat": "repeat",
-			"backgroundSize": "40px"
-		},
-		"blocks": {
-			"core/button": {
-				"border": {
-					"bottom": {
-						"color": "var(--wp--preset--color--custom-or)",
-						"style": "solid",
-						"width": "2px"
-					},
-					"left": {
-						"color": "var(--wp--preset--color--custom-or)",
-						"style": "solid",
-						"width": "2px"
-					},
-					"radius": {
-						"bottomLeft": "100px",
-						"bottomRight": "100px",
-						"topLeft": "100px",
-						"topRight": "100px"
-					},
-					"right": {
-						"color": "var(--wp--preset--color--custom-or)",
-						"style": "solid",
-						"width": "2px"
-					},
-					"top": {
-						"color": "var(--wp--preset--color--custom-or)",
-						"style": "solid",
-						"width": "2px"
-					}
-				},
-				"color": {
-					"background": "var(--wp--preset--color--custom-black)",
-					"text": "var(--wp--preset--color--custom-white)"
-				},
-				"elements": {
-					"link": {
-						"color": {
-							"text": "var(--wp--preset--color--custom-white)"
-						}
-					}
-				},
-				"shadow": "none",
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)",
-					"fontSize": "var(--wp--preset--font-size--medium)"
-				}
-			},
-			"core/group": {
-				"color": {
-					"background": "var(--wp--preset--color--custom-green)"
-				},
-				"spacing": {
-					"padding": {
-						"bottom": "20px",
-						"left": "40px",
-						"right": "40px",
-						"top": "20px"
-					}
-				}
-			}
-		},
-		"color": {
-			"background": "var(--wp--preset--color--custom-green)",
-			"text": "var(--wp--preset--color--custom-white)"
-		},
-		"elements": {
-			"button": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)",
-					"fontWeight": "400"
-				}
-			},
-			"caption": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
-				}
-			},
-			"heading": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
-				}
-			},
-			"link": {
-				"typography": {
-					"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
-				}
-			}
-		},
-		"spacing": {
-			"padding": {
-				"bottom": "0px",
-				"left": "0px",
-				"right": "0px",
-				"top": "0px"
-			}
-		},
-		"typography": {
-			"fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
-		}
-	},
-	"templateParts": [
-		{
-			"area": "header",
-			"name": "header",
-			"title": "En-tête"
-		},
-		{
-			"area": "footer",
-			"name": "footer",
-			"title": "Pied de page"
-		}
-	]
+  "$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+  "version": 3,
+  "settings": {
+    "appearanceTools": true,
+    "color": {
+      "custom": false,
+      "defaultPalette": false,
+      "palette": [
+        {
+          "color": "#020203",
+          "name": "Ink",
+          "slug": "custom-black"
+        },
+        {
+          "color": "#053335",
+          "name": "Midnight",
+          "slug": "custom-green"
+        },
+        {
+          "color": "#0c4a4b",
+          "name": "Aqua",
+          "slug": "custom-turquoise"
+        },
+        {
+          "color": "#f7f1e5",
+          "name": "Paper",
+          "slug": "custom-white"
+        },
+        {
+          "color": "#b99658",
+          "name": "Gold",
+          "slug": "custom-or"
+        },
+        {
+          "color": "#008000",
+          "name": "Green - Rubis",
+          "slug": "custom-green-rubis"
+        },
+        {
+          "color": "#eb5d4b",
+          "name": "Error",
+          "slug": "custom-error"
+        },
+        {
+          "color": "#ffffff00",
+          "name": "Transparent",
+          "slug": "custom-transparent"
+        }
+      ]
+    },
+    "typography": {
+      "fluid": true,
+      "fontFamilies": [
+        {
+          "fontFace": [
+            {
+              "fontFamily": "\"Hylia Serif Beta\"",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": ["file:./assets/fonts/hylia-serif-beta/hylia-serif-beta-400-normal.otf"]
+            }
+          ],
+          "fontFamily": "\"Hylia Serif Beta\"",
+          "name": "Hylia Serif Beta",
+          "slug": "hylia-serif-beta"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Inter",
+              "fontStretch": "normal",
+              "fontStyle": "normal",
+              "fontWeight": "300 900",
+              "src": ["file:./assets/fonts/Inter-VariableFont_slnt,wght.woff2"]
+            }
+          ],
+          "fontFamily": "\"Inter\", sans-serif",
+          "name": "Inter",
+          "slug": "inter"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Cardo",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": ["file:./assets/fonts/cardo_normal_400.woff2"]
+            }
+          ],
+          "fontFamily": "Cardo",
+          "name": "Cardo",
+          "slug": "cardo"
+        },
+        {
+          "fontFace": [
+            {
+              "fontFamily": "Rubis",
+              "fontStyle": "normal",
+              "fontWeight": "400",
+              "src": ["file:./assets/fonts/rubis/rubis-400-normal.otf"]
+            }
+          ],
+          "fontFamily": "Rubis",
+          "name": "Rubis",
+          "slug": "rubis"
+        }
+      ],
+      "fontSizes": [
+        {
+          "fluid": {
+            "max": "1rem",
+            "min": "0.5rem"
+          },
+          "name": "Base",
+          "size": "1rem",
+          "slug": "base"
+        },
+        {
+          "fluid": {
+            "max": "1.25rem",
+            "min": "1rem"
+          },
+          "name": "Navigation",
+          "size": "16px",
+          "slug": "navigation"
+        },
+        {
+          "fluid": {
+            "max": "40px",
+            "min": "25px"
+          },
+          "name": "Produit",
+          "size": "30px",
+          "slug": "produit"
+        },
+        {
+          "fluid": {
+            "max": "60px",
+            "min": "40px"
+          },
+          "name": "Section",
+          "size": "30px",
+          "slug": "section"
+        },
+        {
+          "fluid": {
+            "max": "8rem",
+            "min": "5rem"
+          },
+          "name": "Hero",
+          "size": "6.1rem",
+          "slug": "hero"
+        }
+      ]
+    }
+  },
+  "styles": {
+    "background": {
+      "backgroundAttachment": "fixed",
+      "backgroundImage": {
+        "id": 114,
+        "source": "file",
+        "title": "pattern-triforce",
+        "url": "https://corentindelvaque-zuilo-studio.wp.build/wp-content/uploads/2026/03/pattern-triforce.png"
+      },
+      "backgroundPosition": "50% 0",
+      "backgroundRepeat": "repeat",
+      "backgroundSize": "40px"
+    },
+    "blocks": {
+      "core/button": {
+        "border": {
+          "bottom": {
+            "color": "var(--wp--preset--color--custom-or)",
+            "style": "solid",
+            "width": "2px"
+          },
+          "left": {
+            "color": "var(--wp--preset--color--custom-or)",
+            "style": "solid",
+            "width": "2px"
+          },
+          "radius": {
+            "bottomLeft": "100px",
+            "bottomRight": "100px",
+            "topLeft": "100px",
+            "topRight": "100px"
+          },
+          "right": {
+            "color": "var(--wp--preset--color--custom-or)",
+            "style": "solid",
+            "width": "2px"
+          },
+          "top": {
+            "color": "var(--wp--preset--color--custom-or)",
+            "style": "solid",
+            "width": "2px"
+          }
+        },
+        "color": {
+          "background": "var(--wp--preset--color--custom-black)",
+          "text": "var(--wp--preset--color--custom-white)"
+        },
+        "elements": {
+          "link": {
+            "color": {
+              "text": "var(--wp--preset--color--custom-white)"
+            }
+          }
+        },
+        "shadow": "none",
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)",
+          "fontSize": "var(--wp--preset--font-size--medium)"
+        }
+      },
+      "core/group": {
+        "color": {
+          "background": "var(--wp--preset--color--custom-green)"
+        },
+        "spacing": {
+          "padding": {
+            "bottom": "20px",
+            "left": "40px",
+            "right": "40px",
+            "top": "20px"
+          }
+        }
+      }
+    },
+    "color": {
+      "background": "var(--wp--preset--color--custom-green)",
+      "text": "var(--wp--preset--color--custom-white)"
+    },
+    "elements": {
+      "button": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)",
+          "fontWeight": "400"
+        }
+      },
+      "caption": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
+        }
+      },
+      "heading": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
+        }
+      },
+      "link": {
+        "typography": {
+          "fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
+        }
+      }
+    },
+    "spacing": {
+      "padding": {
+        "bottom": "0px",
+        "left": "0px",
+        "right": "0px",
+        "top": "0px"
+      }
+    },
+    "typography": {
+      "fontFamily": "var(--wp--preset--font-family--hylia-serif-beta)"
+    }
+  },
+  "templateParts": [
+    {
+      "area": "header",
+      "name": "header",
+      "title": "En-tête"
+    },
+    {
+      "area": "footer",
+      "name": "footer",
+      "title": "Pied de page"
+    }
+  ]
 }
