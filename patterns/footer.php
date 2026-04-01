@@ -12,11 +12,7 @@
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
 <h3 class="wp-block-heading has-large-font-size"><?php esc_html_e('Rejoindre la communauté', '');?></h3>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"fontSize":"navigation"} -->
-<p class="has-navigation-font-size"><?php esc_html_e('tfyguiop^$', '');?></p>
-<!-- /wp:paragraph --></div>
+<!-- /wp:heading --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"100%","style":{"spacing":{"padding":{"top":"0px"}}},"layout":{"type":"constrained"}} -->
@@ -33,26 +29,6 @@
 <!-- /wp:heading -->
 
 <!-- wp:categories {"taxonomy":"product_cat","showLabel":false,"style":{"elements":{"link":{"color":{"text":"var:preset|color|custom-white"}}}},"textColor":"custom-white","fontSize":"navigation"} /--></div>
-<!-- /wp:column -->
-
-<!-- wp:column {"width":"100%","style":{"spacing":{"padding":{"top":"0px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-column" style="padding-top:0px;flex-basis:100%"><!-- wp:heading {"fontSize":"large"} -->
-<h2 class="wp-block-heading has-large-font-size"><?php esc_html_e('A Propos', '');?></h2>
-<!-- /wp:heading -->
-
-<!-- wp:paragraph {"fontSize":"navigation"} -->
-<p class="has-navigation-font-size"><?php esc_html_e('A propos de notre boutique', '');?></p>
-<!-- /wp:paragraph --></div>
 <!-- /wp:column --></div>
-<!-- /wp:columns -->
-
-<!-- wp:buttons {"layout":{"type":"flex","flexWrap":"wrap","justifyContent":"center"}} -->
-<div class="wp-block-buttons"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://corentindelvaque-zuilo-studio.wp.build/privacy-policy/"><?php esc_html_e('Politique de confidentialité', '');?></a></div>
-<!-- /wp:button -->
-
-<!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://corentindelvaque-zuilo-studio.wp.build/remboursements_retours/"><?php esc_html_e('Politique de remboursements', '');?></a></div>
-<!-- /wp:button --></div>
-<!-- /wp:buttons --></div>
+<!-- /wp:columns --></div>
 <!-- /wp:group -->

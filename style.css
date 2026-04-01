@@ -645,11 +645,18 @@ h2.wc-block-mini-cart__title {
 
 .mycred-my-balance-wrapper {
   font-family: var(--wp--preset--font-family--hylia-serif-beta);
-
+  font-size: var(--wp--preset--font-size--navigation);
   display: flex;
   align-items: center;
   padding: 0 0.33rem;
+  margin-block-start: 0em !important;
+
   color: var(--wp--preset--color--custom-or);
+}
+
+.mycred-vide {
+  font-family: var(--wp--preset--font-family--hylia-serif-beta);
+  font-size: var(--wp--preset--font-size--navigation);
 }
 
 .wc-block-mini-cart__badge {
@@ -659,9 +666,10 @@ h2.wc-block-mini-cart__title {
 
 .mycred-my-balance-wrapper-container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  padding-left: 3rem;
+  justify-content: center;
+  padding-left: 3rem !important;
 }
 
 .mycred-my-balance-wrapper::after {
@@ -673,7 +681,7 @@ h2.wc-block-mini-cart__title {
 .mycred-my-balance-wrapper-container::before {
   content: "";
   position: absolute;
-  top: 20px;
+  top: 30px;
   width: 90px;
   height: 20px;
   background: url("https://corentindelvaque-zuilo-studio.wp.build/wp-content/uploads/2026/03/Triforce-Ornement-1.png")
