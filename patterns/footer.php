@@ -12,7 +12,13 @@
 
 <!-- wp:heading {"level":3,"fontSize":"large"} -->
 <h3 class="wp-block-heading has-large-font-size"><?php esc_html_e('Rejoindre la communauté', '');?></h3>
-<!-- /wp:heading --></div>
+<!-- /wp:heading -->
+
+<!-- wp:buttons -->
+<div class="wp-block-buttons"><!-- wp:button -->
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://mmi.unilim.fr/~thierry18/laboutiquezelda/ressources/"><?php esc_html_e('Ressources', '');?></a></div>
+<!-- /wp:button --></div>
+<!-- /wp:buttons --></div>
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"100%","style":{"spacing":{"padding":{"top":"0px"}}},"layout":{"type":"constrained"}} -->

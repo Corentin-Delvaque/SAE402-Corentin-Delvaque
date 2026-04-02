@@ -5,7 +5,7 @@
  * Inserter: no
  */
 ?>
-<!-- wp:woocommerce/featured-product {"contentAlign":"left","dimRatio":0,"focalPoint":{"x":1,"y":0.35},"imageFit":"cover","productId":382,"borderColor":"custom-or","backgroundColor":"custom-green","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"border":{"width":"2px"}}} -->
+<!-- wp:woocommerce/featured-product {"contentAlign":"left","dimRatio":0,"focalPoint":{"x":1,"y":0.35},"imageFit":"cover","productId":162,"borderColor":"custom-or","backgroundColor":"custom-green","style":{"spacing":{"padding":{"top":"0","bottom":"0","left":"0","right":"0"}},"border":{"width":"2px"}}} -->
 <!-- wp:post-title {"textAlign":"left","isLink":true,"style":{"spacing":{"margin":{"top":"var:preset|spacing|70","bottom":"var:preset|spacing|40"}}},"fontSize":"x-large","__woocommerceNamespace":"woocommerce/product-collection/product-title"} /-->
 
 <!-- wp:columns {"style":{"spacing":{"padding":{"top":"0","bottom":"0"},"margin":{"top":"0","bottom":"0"},"blockGap":{"top":"0"}}}} -->
@@ -26,7 +26,7 @@
 
 <!-- wp:buttons {"backgroundColor":"custom-transparent","layout":{"type":"flex","justifyContent":"left"}} -->
 <div class="wp-block-buttons has-custom-transparent-background-color has-background"><!-- wp:button -->
-<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://corentindelvaque-zuilo-studio.wp.build/produit/epee-de-legende/"><?php esc_html_e('Acheter maintenant', '');?></a></div>
+<div class="wp-block-button"><a class="wp-block-button__link wp-element-button" href="https://mmi.unilim.fr/~thierry18/laboutiquezelda/produit/epee-de-legende/"><?php esc_html_e('Acheter maintenant', '');?></a></div>
 <!-- /wp:button --></div>
 <!-- /wp:buttons -->
 
