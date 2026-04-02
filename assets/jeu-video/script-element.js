@@ -14,7 +14,7 @@ let rubyFamily = {
   // Définit les valeurs et la probabilité d'apparition de chaque rubis
   rubyGreen: { val: 1, proba: 0.75 },
   rubyBlue: { val: 5, proba: 0.15 },
-  rubyRed: { val: 20, proba: 0.9 },
+  rubyRed: { val: 20, proba: 0.09 },
   rubyGold: { val: 300, proba: 0.01 },
 };
 let bonusFamily = {

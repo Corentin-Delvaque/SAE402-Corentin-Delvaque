@@ -2,6 +2,7 @@ let stats;
 let Menu;
 let MenuMini;
 let overStart;
+let overEnd;
 
 let isMenu = false;
 

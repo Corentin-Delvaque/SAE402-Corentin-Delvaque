@@ -80,6 +80,7 @@ function keyPressed() {
       // Lancer le jeu au démarrage
       gameLaunched = true;
       scoreSent = false;
+      startSound.play();
       loop();
     } else if (gameLaunched && lives <= 0) {
       // Revenir au début si le jeu est terminé
@@ -92,6 +93,7 @@ function keyPressed() {
       elementSpeed = 10;
       elements = [];
       gameLaunched = true;
+      startSound.play();
       loop();
     }
   }

@@ -68,33 +68,12 @@
 					"slug": "hylia-serif-beta"
 				},
 				{
-					"fontFace": [
-						{
-							"fontFamily": "Inter",
-							"fontStretch": "normal",
-							"fontStyle": "normal",
-							"fontWeight": "300 900",
-							"src": [
-								"file:./assets/fonts/Inter-VariableFont_slnt,wght.woff2"
-							]
-						}
-					],
 					"fontFamily": "\"Inter\", sans-serif",
 					"name": "Inter",
 					"slug": "inter"
 				},
 				{
-					"fontFace": [
-						{
-							"fontFamily": "Cardo",
-							"fontStyle": "normal",
-							"fontWeight": "400",
-							"src": [
-								"file:./assets/fonts/cardo_normal_400.woff2"
-							]
-						}
-					],
-					"fontFamily": "Cardo",
+					"fontFamily": "Cardo, serif",
 					"name": "Cardo",
 					"slug": "cardo"
 				},

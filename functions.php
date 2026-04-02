@@ -56,35 +56,6 @@ function zeldaskywardsword_enqueue_editor_styles() {
 add_action( 'after_setup_theme', 'zeldaskywardsword_enqueue_editor_styles' );
 
 
-/**
- * Enregistre et charge le script JavaScript principal du thème.
- *
- * Utilise wp_enqueue_script() pour charger assets/js/app.js avec :
- * - Un identifiant unique 'apple-scripts'
- * - Le chemin vers le fichier via get_template_directory_uri()
- * - Aucune dépendance
- * - La version du thème pour le cache-busting
- * - Chargement dans le footer pour optimiser les performances
- *
- * @since 1.0.0
- * @return void
- */
-function zeldaskywardsword_scripts() {
-    $theme_version = wp_get_theme()->get( 'Version' );
-    $main_script   = get_theme_file_path( 'assets/js/app.js' );
-
-    if ( file_exists( $main_script ) ) {
-        wp_enqueue_script(
-            'zeldaskywardsword-scripts',
-            get_theme_file_uri( 'assets/js/app.js' ),
-            array(),
-            $theme_version,
-            true
-        );
-    }
-}
-add_action( 'wp_enqueue_scripts', 'zeldaskywardsword_scripts' );
-
 add_filter( 'block_editor_settings_all', function( $settings ) {
     $settings['__experimentalFeatures']['useRootPaddingAwareAlignments'] = true;
     return $settings;
