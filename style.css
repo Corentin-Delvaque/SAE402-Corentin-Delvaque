@@ -25,6 +25,10 @@ body.woocommerce-page {
   color: var(--wp--preset--color--custom-white);
 }
 
+a {
+  color: var(--wp--preset--color--custom-white) !important;
+}
+
 .woocommerce
   :is(
     h1,
