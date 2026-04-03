@@ -74,13 +74,13 @@ function zeldaskywardsword_game_asset_url( $path ) {
 /**
  * Enregistre et charge les assets du jeu p5.js.
  *
- * Le jeu est limité à la page d'accueil / page blog pour éviter de charger
+ * Le jeu est limité à la page d'accueil / page blog / page ressources pour éviter de charger
  * le canvas et le code MyCRED partout sur le site.
  *
  * @return void
  */
 function zeldaskywardsword_enqueue_game_assets() {
-    if ( ! is_front_page() && ! is_home() ) {
+    if ( ! is_front_page() && ! is_home() && ! is_page( 'ressources' ) ) {
         return;
     }
 
