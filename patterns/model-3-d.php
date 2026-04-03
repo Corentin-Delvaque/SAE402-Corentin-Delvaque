@@ -1,0 +1,12 @@
+<?php
+/**
+ * Title: model 3 d
+ * Slug: /model-3-d
+ * Inserter: no
+ */
+?>
+<a href="https://mmi.unilim.fr/~thierry18/laboutiquezelda/">
+
+<!-- wp:b3dviewer/modelviewer {"uniqueId":"b3dviewerd469065c","model":{"modelUrl":"https://mmi.unilim.fr/~thierry18/laboutiquezelda/wp-content/uploads/2026/04/Triforce.glb"},"lazyLoad":false,"mouseControl":false,"fullscreen":false,"progressBar":false,"styles":{"width":{"desktop":"100px","tablet":"100px","mobile":"100px"},"height":{"desktop":"100px","tablet":"100px","mobile":"100px"},"bgColor":"transparent","progressBarColor":"#666","thumbSize":"90px"}} /-->
+
+</a>
