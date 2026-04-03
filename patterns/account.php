@@ -6,8 +6,12 @@
  */
 ?>
 
-<!-- wp:group {"style":{"spacing":{"padding":{"right":"var:preset|spacing|70","left":"var:preset|spacing|70","top":"var:preset|spacing|70","bottom":"var:preset|spacing|70"}}},"backgroundColor":"custom-transparent","layout":{"type":"constrained"}} -->
-<div class="wp-block-group has-custom-transparent-background-color has-background" style="padding-top:var(--wp--preset--spacing--70);padding-right:var(--wp--preset--spacing--70);padding-bottom:var(--wp--preset--spacing--70);padding-left:var(--wp--preset--spacing--70)"><!-- wp:shortcode -->
-[woocommerce_my_account]
-<!-- /wp:shortcode --></div>
+<!-- wp:group {"align":"full","style":{"spacing":{"padding":{"top":"40px","right":"40px","bottom":"40px","left":"40px"}}}} -->
+<div class="wp-block-group alignfull" style="padding-top:40px;padding-right:40px;padding-bottom:40px;padding-left:40px">
+    <!-- wp:heading {"level":1,"textAlign":"center"} -->
+    <h1 class="wp-block-heading has-text-align-center"><?php esc_html_e('Mon Compte', '');?></h1>
+    <!-- /wp:heading -->
+
+    <!-- wp:woocommerce/my-account /-->
+</div>
 <!-- /wp:group -->
