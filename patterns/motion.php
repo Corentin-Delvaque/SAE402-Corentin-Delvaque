@@ -18,8 +18,8 @@
 <!-- /wp:column -->
 
 <!-- wp:column {"width":"33.34%"} -->
-<div class="wp-block-column" style="flex-basis:33.34%"><!-- wp:video -->
-<figure class="wp-block-video"></figure>
+<div class="wp-block-column" style="flex-basis:33.34%"><!-- wp:video {"id":236} -->
+<figure class="wp-block-video"><video controls src="https://mmi.unilim.fr/~thierry18/laboutiquezelda/wp-content/uploads/2026/04/apolline_thierry.mp4"></video></figure>
 <!-- /wp:video --></div>
 <!-- /wp:column -->
 

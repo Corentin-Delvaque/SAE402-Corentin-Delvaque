@@ -1405,7 +1405,7 @@ Version: 1.0
 }
 
 a {
-  color: var(--wp--preset--color--custom-white) !important;
+  color: var(--wp--preset--color--custom-white);
 }
 
 body.woocommerce,
